@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Task 1 - Survey</title>
+  </head>
+  <body>
+    <!-- main-container -->
+    <div id="Question-1" class="container">
+      <p id="q-1"></p>
+      <div id="choises" class="choices">
+        <ul>
+          <li onclick="chosen(this,0,1)">
+            <div id="letter">A</div>
+            Strongly Disagree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,0,2)">
+            <div>B</div>
+            Disagree<i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px; top: 12px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,0,3)">
+            <div>C</div>
+            Neutral
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,0,4)">
+            <div>D</div>
+            Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,0,5)">
+            <div>E</div>
+            Strongly Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <div onclick="down()" class="ok">
+        <a>OK<i class="fa-solid fa-check"></i></a>
+      </div>
+    </div>
+    <div id="Question-2" class="container">
+      <p id="q-2"></p>
+      <div id="choises" class="choices">
+        <ul>
+          <li onclick="chosen(this,1,1)">
+            <div id="letter">A</div>
+            Strongly Disagree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,1,2)">
+            <div>B</div>
+            Disagree<i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px; top: 12px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,1,3)">
+            <div>C</div>
+            Neutral
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,1,4)">
+            <div>D</div>
+            Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,1,5)">
+            <div>E</div>
+            Strongly Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <div onclick="down()" class="ok">
+        <a>OK<i class="fa-solid fa-check"></i></a>
+      </div>
+    </div>
+    <div id="Question-3" class="container">
+      <p id="q-3"></p>
+      <div id="choises" class="choices">
+        <ul>
+          <li onclick="chosen(this,2,1)">
+            <div id="letter">A</div>
+            Strongly Disagree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,2,2)">
+            <div>B</div>
+            Disagree<i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px; top: 12px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,2,3)">
+            <div>C</div>
+            Neutral
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,2,4)">
+            <div>D</div>
+            Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,2,5)">
+            <div>E</div>
+            Strongly Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <div onclick="down()" class="ok">
+        <a>OK<i class="fa-solid fa-check"></i></a>
+      </div>
+    </div>
+    <div id="Question-4" class="container">
+      <p id="q-4"></p>
+      <div id="choises" class="choices">
+        <ul>
+          <li onclick="chosen(this,3,1)">
+            <div id="letter">A</div>
+            Strongly Disagree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,3,2)">
+            <div>B</div>
+            Disagree<i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px; top: 12px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,3,3)">
+            <div>C</div>
+            Neutral
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,3,4)">
+            <div>D</div>
+            Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,3,5)">
+            <div>E</div>
+            Strongly Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <div onclick="down()" class="ok">
+        <a>OK<i class="fa-solid fa-check"></i></a>
+      </div>
+    </div>
+    <div id="Question-5" class="container">
+      <p id="q-5"></p>
+      <div id="choises" class="choices">
+        <ul>
+          <li onclick="chosen(this,4,1)">
+            <div id="letter">A</div>
+            Strongly Disagree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,4,2)">
+            <div>B</div>
+            Disagree<i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px; top: 12px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,4,3)">
+            <div>C</div>
+            Neutral
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,4,4)">
+            <div>D</div>
+            Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,4,5)">
+            <div>E</div>
+            Strongly Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <div onclick="down()" class="ok">
+        <a>OK<i class="fa-solid fa-check"></i></a>
+      </div>
+    </div>
+    <div id="Question-6" class="container">
+      <p id="q-6"></p>
+      <div id="choises" class="choices">
+        <ul>
+          <li onclick="chosen(this,5,1)">
+            <div id="letter">A</div>
+            Strongly Disagree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,5,2)">
+            <div>B</div>
+            Disagree<i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px; top: 12px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,5,3)">
+            <div>C</div>
+            Neutral
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,5,4)">
+            <div>D</div>
+            Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+          <li onclick="chosen(this,5,5)">
+            <div>E</div>
+            Strongly Agree
+            <i
+              class="fa-solid fa-check"
+              style="display: none; position: absolute; right: 8px"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <div class="submit">
+        <a href="#">Submit<i class="fa-solid fa-check"></i></a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left-buttons">
+        <a id="up" onclick="up()"><i class="fas fa-angle-up"></i></a>
+        <a id="down" onclick="down()"><i class="fa-solid fa-angle-down"></i></a>
+      </div>
+      <div class="powered-by">
+        <a
+          target="_blank"
+          href="https://www.typeform.com/explore/?utm_campaign=VCI59XCo&utm_source=typeform.com-24859746-free&utm_medium=typeform&utm_content=typeform-footer&utm_term=EN"
+          >Powered by <b>TypeForm</b></a
+        >
+      </div>
+    </div>
+    <script src="./Survey.js"></script>
+  </body>
+</html>
